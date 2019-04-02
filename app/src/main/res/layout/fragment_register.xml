@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@drawable/blur89"
+            tools:context=".View.LoginRegisterViews.RegisterFragment">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerHorizontal="true">
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="4dp"
+                                app:srcCompat="@drawable/logoorange"
+                                android:contentDescription="@string/imageView_content_desc"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/app_name"
+                                android:textSize="16sp"
+                                android:textColor="@color/primaryTextColor"
+                                android:fontFamily="@font/audiowide"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:text="@string/registration"
+                                android:textSize="28sp"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:textAllCaps="true"/>
+                </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true"
+                        android:hint="@string/hint_name">
+
+                        <EditText
+                                android:id="@+id/register_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="true"
+                                style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="14sp"
+                                android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/hint_email"-->
+                        <!--android:textAllCaps="true"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_marginStart="4dp"/>-->
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true"
+                        android:hint="@string/hint_email">
+
+                    <EditText
+                            android:id="@+id/register_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="14sp"
+                            android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/hint_username"-->
+                        <!--android:textAllCaps="true"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_marginStart="4dp"/>-->
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_username"
+                        app:errorEnabled="true">
+
+                    <EditText
+                            android:id="@+id/register_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="14sp"
+                            android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/hint_password"-->
+                        <!--android:textAllCaps="true"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_marginStart="4dp"/>-->
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_password"
+                        app:errorEnabled="true">
+
+                    <EditText
+                            android:id="@+id/register_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="14sp"
+                            android:inputType="textPassword"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_password2"
+                        app:errorEnabled="true">
+
+                    <EditText
+                            android:id="@+id/register_password2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="14sp"
+                            android:inputType="textPassword"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp">
+
+            <Button
+                    android:id="@+id/doregister_button"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    style="android.support.design.button.MaterialButton"
+                    android:text="@string/button_next"
+                    android:textAllCaps="true"
+            />
+        </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

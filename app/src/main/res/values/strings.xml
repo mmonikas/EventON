@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">EventON</string>
+
+    <string name="imageView_content_desc">content description</string>
+
+    <string name="button_next">dalej</string>
+    <string name="button_cancel">anuluj</string>
+
+    <!--strings for errors-->
+    <string name="error_password">error password</string>
+    <string name="error_register_name">error register name</string>
+    <string name="error_register_username">error register username</string>
+    <string name="error_register_password">error register password</string>
+
+
+    <!--strings for login fragment-->
+    <string name="hint_username">LOGIN</string>
+    <string name="hint_password">HASŁO</string>
+    <string name="button_register">Nie masz konta? Zarejestruj się!</string>
+    <string name="button_sign_in">Zaloguj się</string>
+    <string name="invalid_login_data">Nieprawidłowe dane logowania!</string>
+    <string name="button_remind_password">nie pamiętam hasła</string>
+
+
+    <!--strings for register fragment-->
+
+    <string name="hint_name">IMIĘ</string>
+    <string name="hint_email">ADRES E-MAIL</string>
+    <string name="registration">rejestracja</string>
+    <string name="error_register_data">Uzupełnij wszystkie potrzebne dane!</string>
+
+    <!--strings for registration result fragment-->
+    <string name="register_result_ok">Na podany adres e-mail została wysłana prośba o potwierdzenie rejestracji. Eventy
+        czekają na Ciebie!
+    </string>
+    <string name="register_result_failure">Coś poszło nie tak. Spróbuj ponownie!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="button_ok">OK</string>
+    <string name="remind_password">Przypominanie hasła</string>
+    <string name="remindpassword_text">Na podany adres e-mail wyślemy wiadomość dotyczącą resetowania hasła</string>
+    <string name="invalid_email">Podaj poprawny adres e-mail</string>
+    <string name="hint_password2">POWTÓRZ HASŁO</string>
+    <string name="loginerror">Nie udało się zalogować</string>
+
+
+</resources>

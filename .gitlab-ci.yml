@@ -1,0 +1,37 @@
+image: commit451/android-sdk-installer:latest
+
+before_script:
+- android-sdk-installer
+- chmod +x ./gradlew
+
+stages:
+- build
+- test
+#- deploy
+
+lintDebug:
+  stage: build
+  only:
+  - master
+  - developer
+  script:
+  - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
+
+assembleDebug:
+  stage: build
+  only:
+  - master
+  - developer
+  script:
+  - ./gradlew assembleDebug
+  artifacts:
+    paths:
+    - app/build/outputs/
+
+debugTests:
+  stage: test
+  only:
+  - master
+  - developer
+  script:
+  - ./gradlew -Pci --console=plain :app:testDebug --info --stacktrace

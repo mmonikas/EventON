@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".View.LoginRegisterViews.LoginFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="741dp"
+            android:background="@drawable/blur89"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+        <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/logoorange"
+                android:contentDescription="@string/imageView_content_desc"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="48dp"
+                android:text="@string/app_name"
+                android:textSize="32sp"
+                android:textColor="@color/primaryTextColor"
+                android:fontFamily="@font/audiowide"/>
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_username">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:id="@+id/login_username_input"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/password_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                app:errorEnabled="true">
+
+            <EditText
+                    android:id="@+id/login_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                    android:textColor="@color/secondaryLightColor"
+                    android:inputType="textPassword"
+                    android:textAllCaps="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp">
+
+            <Button
+                    android:id="@+id/dologin_button"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    style="android.support.design.button.MaterialButton"
+                    android:text="@string/button_sign_in"
+                    android:textAllCaps="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/registerbuttonLayout">
+
+            <Button
+                    android:id="@+id/goregister_button"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/button_register"
+                    android:textAllCaps="true"/>
+
+            <Button
+                    android:id="@+id/remindpassword_button"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/secondaryLightColor"
+                    android:text="@string/button_remind_password"
+                    android:textAllCaps="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
